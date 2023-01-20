@@ -3,18 +3,25 @@ import React from 'react';
 const Card = () => {
   return (
     <div className='bg-white px-11'>
-      <div className='flexbox'>
+      <div className='flexbox w-[90px] md:w-[140px] lg:w-[190px]'>
         <div>
           <img
             src='/katie.png'
             alt='katie'
-            className='w-1/4 md:w-1/3 lg:w-2/5'
+            className='w-[90px] md:w-[140px] lg:w-[190px]'
           />
         </div>
-        <div>
-          <ul className='text-xs md:text-sm lg:text-lg'>
-            <li>5.0(6)-USA</li>
-            <li>Life lessons with Katie Zaferes</li>
+        <div className='pt-2'>
+          <ul className='text-[10px] md:text-sm lg:text-md font-sans'>
+            <li className=''>
+              <img
+                src='/staricon.png'
+                alt='star'
+                className='w-[8px] md:w-[10px] lg:w-[14px] inline align-baseline pr-0.5'
+              />
+              5.0 <span className=''>(6) USA</span>
+            </li>
+            <li className='antialiased'>Life lessons with Katie Zaferes</li>
             <li>
               <strong>From $136</strong> / person
             </li>
