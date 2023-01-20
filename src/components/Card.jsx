@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Card = () => {
+export default function Card(props) {
   return (
-    <div className='bg-white px-11'>
-      <div className='flexbox w-[90px] md:w-[140px] lg:w-[190px]'>
+    <div className='bg-white px-4'>
+      <div className='flexbox w-[90px] md:w-[130px] lg:w-[160px]'>
         <div>
           <img
-            src='/katie.png'
+            src={props.img}
             alt='katie'
-            className='w-[90px] md:w-[140px] lg:w-[190px]'
+            className='w-[90px] md:w-[130px] lg:w-[160px]'
           />
         </div>
         <div className='pt-2'>
@@ -17,18 +17,20 @@ const Card = () => {
               <img
                 src='/staricon.png'
                 alt='star'
-                className='w-[8px] md:w-[10px] lg:w-[14px] inline align-baseline pr-0.5'
+                className='w-[8px] md:w-[10px] lg:w-[12px] inline align-baseline pr-0.5'
               />
-              5.0 <span className=''>(6) USA</span>
+              {props.rating}{' '}
+              <span className=''>
+                ({props.reviewCount}) · {props.location}
+              </span>
             </li>
-            <li className='antialiased'>Life lessons with Katie Zaferes</li>
+            <li className='antialiased'>{props.title}</li>
             <li>
-              <strong>From $136</strong> / person
+              <strong>From ${props.price}</strong> / person
             </li>
           </ul>
         </div>
       </div>
     </div>
   );
-};
-export default Card;
+}
