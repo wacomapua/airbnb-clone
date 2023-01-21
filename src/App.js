@@ -25,7 +25,7 @@ const cards = data.map(item => {
       <Navbar />
       <HeroBanner />
       <div className='grid w-full bg-white place-content-center pt-3'>
-      <div className='inline-flex'>
+      <div className='inline-flex overflow-x-auto overscroll-y-none scrollbar-hide'>
       {cards}
     </div>
     </div>

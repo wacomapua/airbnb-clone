@@ -44,5 +44,19 @@ const data = [
     location: 'Madrid',
     openSpots: 7,
   },
+  {
+    id: 4,
+    img: '/mountain-bike.png',
+    title: 'Group Mountain Biking',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam tortor, eget aliquam nisl nisl sit amet lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam tortor, eget aliquam nisl nisl sit amet lorem.',
+    price: 50,
+    stats: {
+      rating: 4.8,
+      reviewCount: 8,
+    },
+    location: 'Madrid',
+    openSpots: 7,
+  },
 ];
 export default data;
