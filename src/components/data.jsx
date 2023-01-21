@@ -14,7 +14,7 @@ const data = [
       reviewCount: 6,
     },
     location: 'USA',
-    openSpots: 3,
+    openSpots: 0,
   },
   {
     id: 2,
