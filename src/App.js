@@ -20,12 +20,12 @@ const cards = data.map(item => {
 })
 
   return (
-    <div className='grid w-screen place-items-center'>
+    <div className='grid w-screen place-items-center pb-10'>
     <div className="bg-slate-200 max-w-xl place-content-center justify-center mx-[30px]">
       <Navbar />
       <HeroBanner />
       <div className='grid w-full bg-white place-content-center pt-3'>
-      <div className='inline-flex bg-black'>
+      <div className='inline-flex'>
       {cards}
     </div>
     </div>
