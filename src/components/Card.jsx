@@ -8,7 +8,7 @@ export default function Card(props) {
           <img
             src={props.img}
             alt='katie'
-            className='w-[90px] md:w-[130px] lg:w-[160px]'
+            className='w-[90px] md:w-[130px] lg:w-[160px] drop-shadow-md'
           />
         </div>
         <div className='pt-2'>
