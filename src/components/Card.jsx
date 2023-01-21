@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Card(props) {
   let badge;
-  if (props.openSpots === 0) {
+  if (props.item.openSpots === 0) {
     badge = '/soldout.png';
-  } else if (props.location === 'Online') {
+  } else if (props.item.location === 'Online') {
     badge = '/online.png';
   }
   return (
@@ -12,7 +12,7 @@ export default function Card(props) {
       <div className='flex flex-col relative w-[90px] md:w-[130px] lg:w-[160px]'>
         <div className='relative'>
           <img
-            src={props.img}
+            src={props.item.img}
             alt='picture'
             className='relative w-[90px] md:w-[130px] lg:w-[160px] drop-shadow-md hover:opacity-80 transition duration-300 ease-in-out'
           />
@@ -39,14 +39,14 @@ export default function Card(props) {
                 alt='star'
                 className='w-[8px] md:w-[10px] lg:w-[12px] inline align-baseline pr-0.5'
               />
-              {props.rating}{' '}
+              {props.item.stats.rating}{' '}
               <span className=''>
-                ({props.reviewCount}) · {props.location}
+                ({props.item.stats.reviewCount}) · {props.item.location}
               </span>
             </li>
-            <li className='antialiased'>{props.title}</li>
+            <li className='antialiased'>{props.item.title}</li>
             <li>
-              <strong>From ${props.price}</strong> / person
+              <strong>From ${props.item.price}</strong> / person
             </li>
           </ul>
         </div>
