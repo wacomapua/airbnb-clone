@@ -8,7 +8,6 @@ const data = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam tortor, eget aliquam nisl nisl sit amet lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam tortor, eget aliquam nisl nisl sit amet lorem.',
     price: 136,
-    img: '/katie.png',
     stats: {
       rating: 5.0,
       reviewCount: 6,
